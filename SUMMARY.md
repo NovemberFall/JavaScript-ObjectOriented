@@ -1,6 +1,9 @@
 # Summary
 
 * [Introduction](README.md)
+
+--
+
 * [Chapter1：Object](ch1/intro.md)
     * [1. Object Properties](ch1/object.md)
     * [2. Prototype](ch1/Prototype.md)
@@ -29,6 +32,9 @@
     * [5. coding challenging 2](ch7/codeChallenge.md)
     * [6. Arrow function](ch7/arrFn.md)
     * [7. block scope IIFE](ch7/blockScope.md)
+
+---
+
 * [JavaScript ES6](README.md)
 * [Chapter8：Template String](ch8/intro.md)
     * [1. Template String](ch8/temString.md)
@@ -43,7 +49,13 @@
     * [1. maps](ch11/maps.md)
     * [2. Destructuring 解构赋值](ch11/Destructuring.md)
     * [3. Rest parameters](ch11/rest.md)
+
+---
+
 * [JavaScript DOM](README.md)
+
+---
+
 * [Application Firebase](README.md)
 * [Ch 1：firbase](A1/intro.md)
     * [1. firebase-ta](A1/ta.md)
