@@ -33,6 +33,9 @@
     * [7. block scope IIFE](ch7/blockScope.md)
 * [Chapter8：Expressions & operators](ch8/intro.md)
     * [1. delete operator](ch8/delete.md)
+* [ChapterX：中文教程](chX/intro.md)
+    * [1. function](chX/fn.md)
+    * [2. scope | destructuring](chX/scope.md)
 
 -----
 * [JavaScript ES6](README.md)
