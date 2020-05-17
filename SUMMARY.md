@@ -40,6 +40,8 @@
     * [4. High-Order Function](chX/highOrder.md)
         * [1. map | reduce](chX/mapReduce.md)
         * [2. filter](chX/filter.md)
+        * [3. sort](chX/sort.md)
+        * [4. Array](chX/arr.md)
 
 -----
 * [JavaScript ES6](README.md)
