@@ -1152,6 +1152,63 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="3-method-&#x65B9;&#x6CD5;">3. method &#x65B9;&#x6CD5;</h1>
+<ul>
+<li>&#x5728;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4E2D;&#x7ED1;&#x5B9A;&#x51FD;&#x6570;&#xFF0C;&#x79F0;&#x4E3A;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x3002;</li>
+</ul>
+<p>&#x5728;JavaScript&#x4E2D;&#xFF0C;&#x5BF9;&#x8C61;&#x7684;&#x5B9A;&#x4E49;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> xiaoming = {
+    name: <span class="hljs-string">&apos;&#x5C0F;&#x660E;&apos;</span>,
+    birth: <span class="hljs-number">1990</span>
+};
+</code></pre>
+<ul>
+<li>&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x7ED9;xiaoming&#x7ED1;&#x5B9A;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x505A;&#x66F4;&#x591A;&#x7684;&#x4E8B;&#x60C5;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x5199;&#x4E2A;age()&#x65B9;&#x6CD5;&#xFF0C;&#x8FD4;&#x56DE;xiaoming&#x7684;&#x5E74;&#x9F84;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> xiaoming = {
+    name: <span class="hljs-string">&apos;&#x5C0F;&#x660E;&apos;</span>,
+    birth: <span class="hljs-number">1990</span>,
+    age: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">var</span> y = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().getFullYear();
+        <span class="hljs-keyword">return</span> y - <span class="hljs-keyword">this</span>.birth;
+    }
+};
+
+xiaoming.age; <span class="hljs-comment">// function xiaoming.age()</span>
+xiaoming.age(); <span class="hljs-comment">// &#x4ECA;&#x5E74;&#x8C03;&#x7528;&#x662F;25,&#x660E;&#x5E74;&#x8C03;&#x7528;&#x5C31;&#x53D8;&#x6210;26&#x4E86;</span>
+</code></pre>
+<p>&#x7ED1;&#x5B9A;&#x5230;&#x5BF9;&#x8C61;&#x4E0A;&#x7684;&#x51FD;&#x6570;&#x79F0;&#x4E3A;&#x65B9;&#x6CD5;&#xFF0C;&#x548C;&#x666E;&#x901A;&#x51FD;&#x6570;&#x4E5F;&#x6CA1;&#x5565;&#x533A;&#x522B;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x5728;&#x5185;&#x90E8;&#x4F7F;&#x7528;&#x4E86;&#x4E00;&#x4E2A;this&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E1C;&#x4E1C;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</p>
+<p>&#x5728;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x5185;&#x90E8;&#xFF0C;this&#x662F;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x53D8;&#x91CF;&#xFF0C;&#x5B83;&#x59CB;&#x7EC8;&#x6307;&#x5411;&#x5F53;&#x524D;&#x5BF9;&#x8C61;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;xiaoming&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x3002;
+&#x6240;&#x4EE5;&#xFF0C;this.birth&#x53EF;&#x4EE5;&#x62FF;&#x5230;xiaoming&#x7684;birth&#x5C5E;&#x6027;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-string">``</span><span class="hljs-string">`
+
+
+
+`</span><span class="hljs-string">``</span>js
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-string">``</span><span class="hljs-string">`
+
+
+
+`</span><span class="hljs-string">``</span>js
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-string">``</span><span class="hljs-string">`
+
+
+
+`</span><span class="hljs-string">``</span>js
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-string">``</span><span class="hljs-string">`
+
+
+
+`</span><span class="hljs-string">``</span>js
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-string">``</span><span class="hljs-string">`
+
+
+
+`</span><span class="hljs-string">``</span>js
+</code></pre>
 
                                 
                                 </section>
@@ -1195,7 +1252,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3. method 方法","level":"2.9.3","depth":2,"next":{"title":"JavaScript ES6","level":"3.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"previous":{"title":"2. scope | destructuring","level":"2.9.2","depth":2,"path":"chX/scope.md","ref":"chX/scope.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"chX/method.md","mtime":"2020-05-17T19:26:19.684Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-17T19:26:23.337Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3. method 方法","level":"2.9.3","depth":2,"next":{"title":"JavaScript ES6","level":"3.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"previous":{"title":"2. scope | destructuring","level":"2.9.2","depth":2,"path":"chX/scope.md","ref":"chX/scope.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"chX/method.md","mtime":"2020-05-17T19:33:52.765Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-17T19:34:09.360Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
