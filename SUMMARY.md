@@ -37,6 +37,8 @@
     * [1. function](chX/fn.md)
     * [2. scope | destructuring](chX/scope.md)
     * [3. method 方法](chX/method.md)
+    * [4. High-Order Function](chX/highOrder.md)
+        * [1. map | reduce](chX/mapReduce.md)
 
 -----
 * [JavaScript ES6](README.md)
