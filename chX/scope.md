@@ -270,34 +270,141 @@ let [, , z] = ['hello', 'JavaScript', 'ES6']; // 忽略前两个元素，只对z
 z; // 'ES6'
 ```
 
+- 如果需要从一个对象中取出若干属性，也可以使用解构赋值，便于快速获取对象的指定属性：
 
 ```js
+'use strict';
+
+var person = {
+    name: '小明',
+    age: 20,
+    gender: 'male',
+    passport: 'G-12345678',
+    school: 'No.4 middle school'
+};
+var {name, age, passport} = person;
+
+// name, age, passport分别被赋值为对应属性:
+console.log('name = ' + name + ', age = ' + age + ', passport = ' + passport);
+
+```
+
+- 对一个对象进行解构赋值时，同样可以直接对嵌套的对象属性进行赋值，只要保证对应的层次是一致的：
+
+```js
+var person = {
+    name: '小明',
+    age: 20,
+    gender: 'male',
+    passport: 'G-12345678',
+    school: 'No.4 middle school',
+    address: {
+        city: 'Beijing',
+        street: 'No.1 Road',
+        zipcode: '100001'
+    }
+};
+var {name, address: {city, zip}} = person;
+name; // '小明'
+city; // 'Beijing'
+zip; // undefined, 因为属性名是zipcode而不是zip
+// 注意: address不是变量，而是为了让city和zip获得嵌套的address对象的属性:
+address; // Uncaught ReferenceError: address is not defined
+```
+
+- 使用解构赋值对对象属性进行赋值时，如果对应的属性不存在，变量将被赋值为undefined，
+  这和引用一个不存在的属性获得undefined是一致的。如果要使用的变量名和属性名不一致，可以用下面的语法获取：
+
+```js
+var person = {
+    name: '小明',
+    age: 20,
+    gender: 'male',
+    passport: 'G-12345678',
+    school: 'No.4 middle school'
+};
+
+// 把passport属性赋值给变量id:
+let {name, passport:id} = person;
+name; // '小明'
+id; // 'G-12345678'
+// 注意: passport不是变量，而是为了让变量id获得passport属性:
+passport; // Uncaught ReferenceError: passport is not defined
 ```
 
 
+- 解构赋值还可以使用默认值，这样就避免了不存在的属性返回undefined的问题：
 
 ```js
+var person = {
+    name: '小明',
+    age: 20,
+    gender: 'male',
+    passport: 'G-12345678'
+};
+
+// 如果person对象没有single属性，默认赋值为true:
+var {name, single=true} = person;
+name; // '小明'
+single; // true
 ```
 
 
+- 有些时候，如果变量已经被声明了，再次赋值的时候，正确的写法也会报语法错误：
+
 ```js
+// 声明变量:
+var x, y;
+// 解构赋值:
+{x, y} = { name: '小明', x: 100, y: 200};
+// 语法错误: Uncaught SyntaxError: Unexpected token =
+```
+
+- 这是因为JavaScript引擎把{开头的语句当作了块处理，于是=不再合法。解决方法是用小括号括起来：
+
+```js
+({x, y} = { name: '小明', x: 100, y: 200});
+```
+
+---
+
+
+## 使用场景
+
+- 解构赋值在很多时候可以大大简化代码。例如，交换两个变量x和y的值，可以这么写，不再需要临时变量：
+
+```js
+var x=1, y=2;
+[x, y] = [y, x]
+```
+
+- 快速获取当前页面的域名和路径：
+
+```js
+var {hostname:domain, pathname:path} = location;
 ```
 
 
+- 如果一个函数接收一个对象作为参数，那么，可以使用解构直接把对象的属性绑定到变量中。例如，下面的函数可以快速创建一个Date对象：
 
 ```js
+function buildDate({year, month, day, hour=0, minute=0, second=0}) {
+    return new Date(year + '-' + month + '-' + day + ' ' + hour + ':' + minute + ':' + second);
+}
 ```
 
+- 它的方便之处在于传入的对象只需要year、month和day这三个属性：
 
 ```js
+buildDate({ year: 2017, month: 1, day: 1 });
+// Sun Jan 01 2017 00:00:00 GMT+0800 (CST)
 ```
 
-
+- 也可以传入hour、minute和second属性：
 
 ```js
+buildDate({ year: 2017, month: 1, day: 1, hour: 20, minute: 15 });
+// Sun Jan 01 2017 20:15:00 GMT+0800 (CST)
 ```
-
-
-
 
 

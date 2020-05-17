@@ -36,6 +36,7 @@
 * [ChapterX：中文教程](chX/intro.md)
     * [1. function](chX/fn.md)
     * [2. scope | destructuring](chX/scope.md)
+    * [3. method 方法](chX/method.md)
 
 -----
 * [JavaScript ES6](README.md)
