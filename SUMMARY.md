@@ -39,6 +39,7 @@
     * [3. method 方法](chX/method.md)
     * [4. High-Order Function](chX/highOrder.md)
         * [1. map | reduce](chX/mapReduce.md)
+        * [2. filter](chX/filter.md)
 
 -----
 * [JavaScript ES6](README.md)
