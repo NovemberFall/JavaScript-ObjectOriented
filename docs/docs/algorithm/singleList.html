@@ -1,0 +1,1850 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>9. Singly LinkedList · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="doubleList.html" />
+    
+    
+    <link rel="prev" href="radixSort.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../ch1/intro.html">
+            
+                <a href="../ch1/intro.html">
+            
+                    
+                    Chapter1：Object
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../ch1/object.html">
+            
+                <a href="../ch1/object.html">
+            
+                    
+                    1. Object Properties
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../ch1/Prototype.html">
+            
+                <a href="../ch1/Prototype.html">
+            
+                    
+                    2. Prototype
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../ch1/nvpo.html">
+            
+                <a href="../ch1/nvpo.html">
+            
+                    
+                    3. Name Value Pairs Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../ch1/Closures.html">
+            
+                <a href="../ch1/Closures.html">
+            
+                    
+                    4. Closures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../ch1/EIAO-chain.html">
+            
+                <a href="../ch1/EIAO-chain.html">
+            
+                    
+                    5. Everything is an object
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../ch2/intro.html">
+            
+                <a href="../ch2/intro.html">
+            
+                    
+                    Chapter2：Array
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../ch2/for.html">
+            
+                <a href="../ch2/for.html">
+            
+                    
+                    1. for loop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../ch2/arrayES5.html">
+            
+                <a href="../ch2/arrayES5.html">
+            
+                    
+                    2. Array ES5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../ch2/arrayES6.html">
+            
+                <a href="../ch2/arrayES6.html">
+            
+                    
+                    3. Array ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../ch3/intro.html">
+            
+                <a href="../ch3/intro.html">
+            
+                    
+                    Chapter3：Date Time Library
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../ch3/date.html">
+            
+                <a href="../ch3/date.html">
+            
+                    
+                    1. Date | Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../ch4/intro.html">
+            
+                <a href="../ch4/intro.html">
+            
+                    
+                    Chapter4：Class
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../ch4/class.html">
+            
+                <a href="../ch4/class.html">
+            
+                    
+                    1. Class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../ch4/subClass.html">
+            
+                <a href="../ch4/subClass.html">
+            
+                    
+                    2. Sub Class ES5 | ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../ch5/intro.html">
+            
+                <a href="../ch5/intro.html">
+            
+                    
+                    Chapter5：Call back
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../ch5/cb.html">
+            
+                <a href="../ch5/cb.html">
+            
+                    
+                    1. callback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../ch5/ecs.html">
+            
+                <a href="../ch5/ecs.html">
+            
+                    
+                    2. Execution Context Stack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../ch6/intro.html">
+            
+                <a href="../ch6/intro.html">
+            
+                    
+                    Chapter6：call apply bind
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="../ch6/cab.html">
+            
+                <a href="../ch6/cab.html">
+            
+                    
+                    1. call apply bind
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../ch7/intro.html">
+            
+                <a href="../ch7/intro.html">
+            
+                    
+                    Chapter7：Function | IIFE
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.1" data-path="../ch7/fn.html">
+            
+                <a href="../ch7/fn.html">
+            
+                    
+                    1. function es5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.2" data-path="../ch7/fn1.html">
+            
+                <a href="../ch7/fn1.html">
+            
+                    
+                    2. function example
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.3" data-path="../ch7/defaultPara.html">
+            
+                <a href="../ch7/defaultPara.html">
+            
+                    
+                    3. Default Parameters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.4" data-path="../ch7/codeChallenge1.html">
+            
+                <a href="../ch7/codeChallenge1.html">
+            
+                    
+                    4. coding challenging 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.5" data-path="../ch7/codeChallenge.html">
+            
+                <a href="../ch7/codeChallenge.html">
+            
+                    
+                    5. coding challenging 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.6" data-path="../ch7/arrFn.html">
+            
+                <a href="../ch7/arrFn.html">
+            
+                    
+                    6. Arrow function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.7" data-path="../ch7/blockScope.html">
+            
+                <a href="../ch7/blockScope.html">
+            
+                    
+                    7. block scope IIFE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../ch8/intro.html">
+            
+                <a href="../ch8/intro.html">
+            
+                    
+                    Chapter8：Expressions & operators
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.8.1" data-path="../ch8/delete.html">
+            
+                <a href="../ch8/delete.html">
+            
+                    
+                    1. delete operator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../chX/intro.html">
+            
+                <a href="../chX/intro.html">
+            
+                    
+                    ChapterX：中文教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.9.1" data-path="../chX/fn.html">
+            
+                <a href="../chX/fn.html">
+            
+                    
+                    1. function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.2" data-path="../chX/scope.html">
+            
+                <a href="../chX/scope.html">
+            
+                    
+                    2. scope | destructuring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.3" data-path="../chX/method.html">
+            
+                <a href="../chX/method.html">
+            
+                    
+                    3. method 方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.4" data-path="../chX/highOrder.html">
+            
+                <a href="../chX/highOrder.html">
+            
+                    
+                    4. High-Order Function
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.9.4.1" data-path="../chX/mapReduce.html">
+            
+                <a href="../chX/mapReduce.html">
+            
+                    
+                    1. map | reduce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.4.2" data-path="../chX/filter.html">
+            
+                <a href="../chX/filter.html">
+            
+                    
+                    2. filter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.4.3" data-path="../chX/sort.html">
+            
+                <a href="../chX/sort.html">
+            
+                    
+                    3. sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.4.4" data-path="../chX/arr.html">
+            
+                <a href="../chX/arr.html">
+            
+                    
+                    4. Array
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    JavaScript ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../ch8/intro.html">
+            
+                <a href="../ch8/intro.html">
+            
+                    
+                    Chapter8：Template String
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../ch8/temString.html">
+            
+                <a href="../ch8/temString.html">
+            
+                    
+                    1. Template String
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../ch9/intro.html">
+            
+                <a href="../ch9/intro.html">
+            
+                    
+                    Chapter9：异步编程 Asynchronous
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../ch9/Asynchronous.html">
+            
+                <a href="../ch9/Asynchronous.html">
+            
+                    
+                    1. Asynchronous
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="../ch9/Asynchronous1.html">
+            
+                <a href="../ch9/Asynchronous1.html">
+            
+                    
+                    2. 异步编程 Asynchronous
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="../ch9/ajax.html">
+            
+                <a href="../ch9/ajax.html">
+            
+                    
+                    3. AJAX
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../ch10/intro.html">
+            
+                <a href="../ch10/intro.html">
+            
+                    
+                    Chapter10：let const
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="../ch10/let.html">
+            
+                <a href="../ch10/let.html">
+            
+                    
+                    1. let const
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.2" data-path="../ch10/localStorage.html">
+            
+                <a href="../ch10/localStorage.html">
+            
+                    
+                    2. local storage
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../ch11/intro.html">
+            
+                <a href="../ch11/intro.html">
+            
+                    
+                    Chapter11：Map
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="../ch11/maps.html">
+            
+                <a href="../ch11/maps.html">
+            
+                    
+                    1. maps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" data-path="../ch11/Destructuring.html">
+            
+                <a href="../ch11/Destructuring.html">
+            
+                    
+                    2. Destructuring 解构赋值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.3" data-path="../ch11/rest.html">
+            
+                <a href="../ch11/rest.html">
+            
+                    
+                    3. Rest parameters
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Data Structure Algorithm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="recursion.html">
+            
+                <a href="recursion.html">
+            
+                    
+                    1. Recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="search.html">
+            
+                <a href="search.html">
+            
+                    
+                    2. Search Algorithm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="bubSort.html">
+            
+                <a href="bubSort.html">
+            
+                    
+                    3. Bubble Sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="slSort.html">
+            
+                <a href="slSort.html">
+            
+                    
+                    4. Selection Sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="insertSort.html">
+            
+                <a href="insertSort.html">
+            
+                    
+                    5. Insertion Sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="mergeSort.html">
+            
+                <a href="mergeSort.html">
+            
+                    
+                    6. Merge Sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="quickSort.html">
+            
+                <a href="quickSort.html">
+            
+                    
+                    7. quick Sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="radixSort.html">
+            
+                <a href="radixSort.html">
+            
+                    
+                    8. Radix Sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.1.9" data-path="singleList.html">
+            
+                <a href="singleList.html">
+            
+                    
+                    9. Singly LinkedList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.10" data-path="doubleList.html">
+            
+                <a href="doubleList.html">
+            
+                    
+                    10. Doubly LinkedList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.11" data-path="stackQueue.html">
+            
+                <a href="stackQueue.html">
+            
+                    
+                    11. Stack && Queue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.12" data-path="BST.html">
+            
+                <a href="BST.html">
+            
+                    
+                    12. Binary Search Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Application Firebase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../A1/intro.html">
+            
+                <a href="../A1/intro.html">
+            
+                    
+                    Ch 1：firbase
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../A1/ta.html">
+            
+                <a href="../A1/ta.html">
+            
+                    
+                    1. firebase-ta
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../A1/db.html">
+            
+                <a href="../A1/db.html">
+            
+                    
+                    2. Database Firebase
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../A2/intro.html">
+            
+                <a href="../A2/intro.html">
+            
+                    
+                    Ch 2：Babel Webpack
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="../A2/bw.html">
+            
+                <a href="../A2/bw.html">
+            
+                    
+                    1. babel webpack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../end/SUMMARY.html">
+            
+                <a href="../end/SUMMARY.html">
+            
+                    
+                    End
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >9. Singly LinkedList</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="singly-linkedlist--big-o">Singly LinkedList &amp;&amp; Big-O</h1>
+<ul>
+<li>a stupid way</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Node</span></span>{
+    <span class="hljs-keyword">constructor</span>(val){
+        <span class="hljs-keyword">this</span>.val = val;
+        <span class="hljs-keyword">this</span>.next = <span class="hljs-literal">null</span>;
+    }
+}
+
+<span class="hljs-keyword">var</span> first = <span class="hljs-keyword">new</span> Node(<span class="hljs-string">&apos;Hi&apos;</span>);
+first.next = <span class="hljs-keyword">new</span> Node(<span class="hljs-string">&apos;there, &apos;</span>);
+first.next.next = <span class="hljs-keyword">new</span> Node(<span class="hljs-string">&apos;how&apos;</span>);
+first.next.next.next = <span class="hljs-keyword">new</span> Node(<span class="hljs-string">&apos;are&apos;</span>);
+first.next.next.next.next = <span class="hljs-keyword">new</span> Node(<span class="hljs-string">&apos;you?&apos;</span>);
+
+<span class="hljs-keyword">while</span>(first.next){
+    <span class="hljs-built_in">console</span>.log(first.val);
+    first = first.next;
+}
+</code></pre>
+<h1 id="implement-singly-linkedlist-pushing">implement Singly LinkedList; Pushing</h1>
+<p><code>Adding a new</code> <strong>node</strong> <code>to the end of the Lined List</code></p>
+<p><code>Pushing pseudocode</code></p>
+<ul>
+<li><p>This function should accept a value</p>
+</li>
+<li><p>Create a new node using the value passed to the function</p>
+</li>
+<li><p>if there is no head property on the list, set the head and tail to be the newly created node</p>
+</li>
+<li><p>Otherwise set the next property on the tail to be the new node and set the tail property on the list to be the newly created node</p>
+</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-comment">// piece of data - val</span>
+<span class="hljs-comment">// reference to next node - next</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Node</span></span>{
+    <span class="hljs-keyword">constructor</span>(val){
+        <span class="hljs-keyword">this</span>.val = val;
+        <span class="hljs-keyword">this</span>.next = <span class="hljs-literal">null</span>;
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SinglyLinkedList</span></span>{
+    <span class="hljs-keyword">constructor</span>(){
+        <span class="hljs-keyword">this</span>.head = <span class="hljs-literal">null</span>;
+        <span class="hljs-keyword">this</span>.tail = <span class="hljs-literal">null</span>;
+        <span class="hljs-keyword">this</span>.length = <span class="hljs-number">0</span>;
+    }
+    <span class="hljs-comment">//adding a push function to implement the functioning: adding a node to the tail</span>
+    push(val){
+        <span class="hljs-keyword">const</span> node = <span class="hljs-keyword">new</span> Node(val);
+        <span class="hljs-keyword">if</span>(!<span class="hljs-keyword">this</span>.head){
+            <span class="hljs-keyword">this</span>.head = node;
+            <span class="hljs-keyword">this</span>.tail = node;
+        }<span class="hljs-keyword">else</span>{
+            <span class="hljs-keyword">this</span>.tail.next = node;
+            <span class="hljs-keyword">this</span>.tail = node;
+        }
+        <span class="hljs-keyword">this</span>.length++;
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+    traverse(){
+        <span class="hljs-keyword">var</span> current = <span class="hljs-keyword">this</span>.head;
+        <span class="hljs-keyword">while</span>(current){
+            <span class="hljs-built_in">console</span>.log(current.val);
+            current = current.next;
+        }
+    }
+}
+<span class="hljs-keyword">var</span> list = <span class="hljs-keyword">new</span> SinglyLinkedList();
+list.push(<span class="hljs-string">&apos;Hello&apos;</span>);
+list.push(<span class="hljs-string">&apos;World&apos;</span>);
+list.push(<span class="hljs-string">&apos;!&apos;</span>);
+list.traverse();
+
+<span class="hljs-comment">//output:</span>
+Hello
+World
+!
+</code></pre>
+<hr>
+<h1 id="popping">Popping</h1>
+<p><code>Removing a</code> <strong>node</strong> <code>from the end of the Linked List</code></p>
+<ul>
+<li>adding a pop() function</li>
+</ul>
+<pre><code class="lang-js">    pop(){
+        <span class="hljs-keyword">if</span>(!<span class="hljs-keyword">this</span>.head){ <span class="hljs-keyword">return</span> <span class="hljs-literal">undefined</span>;}
+        <span class="hljs-keyword">var</span> current = <span class="hljs-keyword">this</span>.head;
+        <span class="hljs-keyword">var</span> tempTail = current;
+        <span class="hljs-keyword">while</span>(current.next){
+            tempTail = current;
+            current = current.next;
+        }
+        <span class="hljs-built_in">console</span>.log(current.val);
+        <span class="hljs-built_in">console</span>.log(tempTail.val);
+    }
+</code></pre>
+<ul>
+<li>if we call list.pop()</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-comment">/* 
+!
+World
+*/</span>
+<span class="hljs-comment">// since the when current.next == null, stop wihlie loop, that means </span>
+<span class="hljs-comment">// tempTail stop at penult. The current stop at the last node</span>
+</code></pre>
+<hr>
+<ul>
+<li>updating pop() function</li>
+</ul>
+<pre><code class="lang-js">    pop(){
+        <span class="hljs-keyword">if</span>(!<span class="hljs-keyword">this</span>.head){ <span class="hljs-keyword">return</span> <span class="hljs-literal">undefined</span>;}
+        <span class="hljs-keyword">var</span> current = <span class="hljs-keyword">this</span>.head;
+        <span class="hljs-keyword">var</span> tempTail = current;
+        <span class="hljs-keyword">while</span>(current.next){
+            tempTail = current;
+            current = current.next;
+        }
+<span class="hljs-comment">/* 
+        hello -&gt; World -&gt; !
+                        curr
+                 temp
+*/</span>
+        <span class="hljs-keyword">this</span>.tail = tempTail;
+        <span class="hljs-keyword">this</span>.tail.next = <span class="hljs-literal">null</span>;
+        <span class="hljs-keyword">this</span>.length--;
+        <span class="hljs-keyword">if</span>(<span class="hljs-keyword">this</span>.length == <span class="hljs-number">0</span>){
+            <span class="hljs-keyword">this</span>.head = <span class="hljs-literal">null</span>;
+            <span class="hljs-keyword">this</span>.tail = <span class="hljs-literal">null</span>;
+        }
+        <span class="hljs-keyword">return</span> current;
+    }
+
+
+<span class="hljs-keyword">var</span> list = <span class="hljs-keyword">new</span> SinglyLinkedList();
+list.push(<span class="hljs-string">&apos;Hello&apos;</span>);
+list.push(<span class="hljs-string">&apos;World&apos;</span>);
+list.push(<span class="hljs-string">&apos;!&apos;</span>);
+list.traverse();
+<span class="hljs-comment">// console.log(list.pop().val);</span>
+<span class="hljs-comment">// console.log(list);</span>
+list.pop();
+list.pop();
+list.pop();
+<span class="hljs-built_in">console</span>.log(list);
+
+<span class="hljs-comment">/* output: */</span>
+Hello
+World
+!
+SinglyLinkedList { head: <span class="hljs-literal">null</span>, tail: <span class="hljs-literal">null</span>, length: <span class="hljs-number">0</span> }
+</code></pre>
+<hr>
+<h1 id="shifting-pseudocode">Shifting pseudocode</h1>
+<ul>
+<li><p>If there are no nodes, return undefined</p>
+</li>
+<li><p>Store the current head property in a variable</p>
+</li>
+<li><p>Set the head property to be the current head&apos;s next property</p>
+</li>
+<li><p>Decrement the length by 1</p>
+</li>
+<li><p>Return the value of the node removed</p>
+</li>
+</ul>
+<pre><code class="lang-js">    shift() {
+        <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.head) <span class="hljs-keyword">return</span> <span class="hljs-literal">undefined</span>;
+        <span class="hljs-keyword">var</span> currentHead = <span class="hljs-keyword">this</span>.head;
+        <span class="hljs-keyword">this</span>.head = currentHead.next;
+        <span class="hljs-keyword">this</span>.length--;
+        <span class="hljs-keyword">return</span> currentHead;
+    }
+
+list.shift();
+<span class="hljs-built_in">console</span>.log(list)
+list.shift();
+<span class="hljs-built_in">console</span>.log(list)
+list.shift();
+<span class="hljs-built_in">console</span>.log(list)
+
+
+<span class="hljs-comment">//output:</span>
+
+SinglyLinkedList {
+  head: Node { val: <span class="hljs-string">&apos;World&apos;</span>, next: Node { val: <span class="hljs-string">&apos;!&apos;</span>, next: <span class="hljs-literal">null</span> } },
+  tail: Node { val: <span class="hljs-string">&apos;!&apos;</span>, next: <span class="hljs-literal">null</span> },
+  length: <span class="hljs-number">2</span>
+}
+SinglyLinkedList {
+  head: Node { val: <span class="hljs-string">&apos;!&apos;</span>, next: <span class="hljs-literal">null</span> },
+  tail: Node { val: <span class="hljs-string">&apos;!&apos;</span>, next: <span class="hljs-literal">null</span> },
+  length: <span class="hljs-number">1</span>
+}
+SinglyLinkedList { head: <span class="hljs-literal">null</span>, tail: <span class="hljs-literal">null</span>, length: <span class="hljs-number">0</span> }
+</code></pre>
+<hr>
+<h1 id="unshifting--------insertfirst">Unshifting        (insertFirst)</h1>
+<ul>
+<li><p>Adding a new node to the beginning of the Linked List!</p>
+</li>
+<li><p>This function should accept a value</p>
+</li>
+<li><p>Create a new node using the value passed to the function</p>
+</li>
+<li><p>if there is no head property on the list, set the head and tail to be newly created node</p>
+</li>
+<li><p>Othewise set the newly created node&apos;s next property to be the current head property on the list. </p>
+</li>
+<li><p>Set the head property on the list to be that newly created node</p>
+</li>
+<li><p>Increment the length of the list by 1</p>
+</li>
+<li><p>Return the linked list</p>
+</li>
+</ul>
+<pre><code class="lang-js">    unshift(val){
+        <span class="hljs-keyword">var</span> newNode = <span class="hljs-keyword">new</span> Node(val);
+        <span class="hljs-keyword">if</span>(!head){
+            <span class="hljs-keyword">this</span>.head = newNode;
+            <span class="hljs-keyword">this</span>.tail = <span class="hljs-keyword">this</span>.head;
+        }<span class="hljs-keyword">else</span>{
+            newNode.next = <span class="hljs-keyword">this</span>.head;
+            <span class="hljs-keyword">this</span>.head = newNode;
+        }
+            <span class="hljs-keyword">this</span>.length++;
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+            <span class="hljs-comment">// return this linked list !</span>
+
+    }
+
+list.unshift(<span class="hljs-string">&quot;1&quot;</span>);
+list.unshift(<span class="hljs-string">&quot;2&quot;</span>);
+list.unshift(<span class="hljs-string">&quot;3&quot;</span>);
+<span class="hljs-built_in">console</span>.log(list);
+
+<span class="hljs-comment">//output:</span>
+
+SinglyLinkedList {
+  head: Node { val: <span class="hljs-string">&apos;3&apos;</span>, next: Node { val: <span class="hljs-string">&apos;2&apos;</span>, next: [Node] } },
+  tail: Node { val: <span class="hljs-string">&apos;1&apos;</span>, next: [Circular] },
+  length: <span class="hljs-number">3</span>
+}
+</code></pre>
+<hr>
+<h1 id="getter">Getter</h1>
+<ul>
+<li>Retrieving a <strong>node</strong> by its position in the Linked List</li>
+</ul>
+<p><code>Get pseudocode:</code></p>
+<ul>
+<li><p>This function should accept an index</p>
+</li>
+<li><p>if the index is less than zero or greater than or queal to the length of the list, return null</p>
+</li>
+<li><p>Loop through the list until you reach the index and return the node at the specific index</p>
+</li>
+</ul>
+<pre><code class="lang-js">    get(index){
+        <span class="hljs-keyword">if</span>(index&lt;<span class="hljs-number">0</span> || index&gt;=<span class="hljs-keyword">this</span>.length){
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+        }
+        <span class="hljs-keyword">var</span> counter = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">var</span> current = <span class="hljs-keyword">this</span>.head;
+        <span class="hljs-keyword">while</span>(counter !== index){
+            current = current.next;
+            counter++;
+        }
+        <span class="hljs-keyword">return</span> current;
+    }
+list.push(<span class="hljs-string">&quot;Hello&quot;</span>);
+list.push(<span class="hljs-string">&quot;Wolrd&quot;</span>);
+list.push(<span class="hljs-string">&quot;!&quot;</span>);
+list.push(<span class="hljs-string">&quot;:)&quot;</span>);
+list.push(<span class="hljs-string">&quot;:(&quot;</span>);
+<span class="hljs-keyword">var</span> ptr = list.get(<span class="hljs-number">4</span>);
+<span class="hljs-built_in">console</span>.log(ptr.val);
+
+<span class="hljs-comment">//output:</span>
+
+:(
+</code></pre>
+<hr>
+<h1 id="set-value">Set Value</h1>
+<p><code>Changing the value of a node based on its position in the Linked List</code></p>
+<p><code>Set pseudocode:</code></p>
+<ul>
+<li><p>This function should accept a value and an index</p>
+</li>
+<li><p>Use your get function to find the specific node.</p>
+</li>
+<li><p>If the node is not found, return false</p>
+</li>
+<li><p>if the node is found, set the value of that node to be the value passed to the function and return true</p>
+</li>
+</ul>
+<pre><code class="lang-js">    set(index, value){
+        <span class="hljs-keyword">var</span> foundNode = <span class="hljs-keyword">this</span>.get(index);
+        <span class="hljs-keyword">if</span>(foundNode){
+            foundNode.val = value;
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+    }
+
+list.set(<span class="hljs-number">0</span>, <span class="hljs-string">&quot;!!!&quot;</span>);
+<span class="hljs-built_in">console</span>.log(list.get(<span class="hljs-number">0</span>).val);
+list.set(<span class="hljs-number">1</span>, <span class="hljs-string">&quot;***&quot;</span>);
+<span class="hljs-built_in">console</span>.log(list.get(<span class="hljs-number">1</span>).val);
+list.set(<span class="hljs-number">2</span>, <span class="hljs-string">&quot;&#x1F604;&quot;</span>);
+<span class="hljs-built_in">console</span>.log(list.get(<span class="hljs-number">2</span>).val);
+list.set(<span class="hljs-number">3</span>, <span class="hljs-string">&quot;&#x1F47D;&quot;</span>);
+<span class="hljs-built_in">console</span>.log(list.get(<span class="hljs-number">3</span>).val);
+
+<span class="hljs-comment">//output:</span>
+
+!!!
+***
+&#x1F604;
+&#x1F47D;
+</code></pre>
+<hr>
+<h1 id="insert">Insert</h1>
+<p><code>Adding a node to the Linked List at a specific position</code></p>
+<p><code>Insert pseudocode:</code></p>
+<ul>
+<li><p>if the index is less than zero or greater than the length, return false</p>
+</li>
+<li><p>if the index is the smae as the length, push a new node to the end of the list</p>
+</li>
+<li><p>if the index is 0, unshift(insertFirst) a new node to the start of the list</p>
+</li>
+<li><p>Otherwise, using the <strong>get</strong> method, access the node at the index -1</p>
+</li>
+<li><p>Set the next property on that node to be the new node</p>
+</li>
+<li><p>Set the next property on the new node to be the previous next </p>
+</li>
+<li><p>Increment the length</p>
+</li>
+<li><p>Return true</p>
+</li>
+</ul>
+<pre><code class="lang-js">    insert(index, value){
+        <span class="hljs-keyword">if</span>(index&lt;<span class="hljs-number">0</span> || index&gt;<span class="hljs-keyword">this</span>.length){
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+        }
+        <span class="hljs-keyword">if</span>(index === <span class="hljs-keyword">this</span>.length){
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.push(value);
+        }
+        <span class="hljs-keyword">if</span>(index === <span class="hljs-number">0</span>){
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.unshift(value);
+        }
+        <span class="hljs-keyword">var</span> newNode = <span class="hljs-keyword">new</span> Node(value);
+        <span class="hljs-keyword">var</span> prev = <span class="hljs-keyword">this</span>.get(index<span class="hljs-number">-1</span>);
+        <span class="hljs-keyword">var</span> temp = prev.next;
+        prev.next = newNode;
+        newNode.next = temp;
+        <span class="hljs-keyword">this</span>.length++;
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    }
+
+list.push(<span class="hljs-number">100</span>);
+list.push(<span class="hljs-number">201</span>);
+list.push(<span class="hljs-number">250</span>);
+list.push(<span class="hljs-number">350</span>);
+list.insert(<span class="hljs-number">1</span>, <span class="hljs-string">&quot;&#x1F604;&quot;</span>);
+<span class="hljs-built_in">console</span>.log(list.get(<span class="hljs-number">1</span>).val);
+list.insert(<span class="hljs-number">1</span>, <span class="hljs-string">&quot;&#x706B;&#x661F;&#x4EBA;&quot;</span>);
+<span class="hljs-built_in">console</span>.log(list.get(<span class="hljs-number">1</span>).val);
+<span class="hljs-built_in">console</span>.log(list.length); <span class="hljs-comment">//6</span>
+list.insert(<span class="hljs-number">6</span>, <span class="hljs-string">&quot;&#x5927;&#x524D;&#x7AEF;&#xFF01;&quot;</span>);
+<span class="hljs-built_in">console</span>.log(list.get(<span class="hljs-number">6</span>).val);
+<span class="hljs-built_in">console</span>.log(list.insert(<span class="hljs-number">8</span>, <span class="hljs-string">&quot;&#x1F349;&quot;</span>)); <span class="hljs-comment">//false</span>
+
+<span class="hljs-comment">//output:</span>
+&#x1F604;
+&#x706B;&#x661F;&#x4EBA;
+<span class="hljs-number">6</span>
+&#x5927;&#x524D;&#x7AEF;&#xFF01;
+<span class="hljs-literal">false</span>
+</code></pre>
+<hr>
+<h1 id="remove">Remove</h1>
+<p><code>Removing a node from the linked list at a</code> <strong>specific</strong> position</p>
+<p><code>Remove pseudocode</code></p>
+<ul>
+<li><p>if the index is less than zero or greater then the length, return undefined</p>
+</li>
+<li><p>if the index is the same as the length-1, pop</p>
+</li>
+<li><p>if the index is 0, shift</p>
+</li>
+<li><p>Otherwise, using the <strong>get</strong> method, access the node at the index-1</p>
+</li>
+<li><p>Set the next property on that node to be the next of the next node</p>
+</li>
+<li><p>Decrement the length</p>
+</li>
+<li><p>Return the value of the node removed</p>
+</li>
+</ul>
+<pre><code class="lang-js">    remove(index){
+        <span class="hljs-keyword">if</span>(index&lt;<span class="hljs-number">0</span> || index&gt;= <span class="hljs-keyword">this</span>.length){
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">undefined</span>;
+        }
+        <span class="hljs-keyword">if</span>(index === <span class="hljs-number">0</span>){
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.shift(index);
+        }
+        <span class="hljs-keyword">if</span>(index === <span class="hljs-keyword">this</span>.length<span class="hljs-number">-1</span>){
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.pop();
+        }
+        <span class="hljs-keyword">var</span> previousNode = <span class="hljs-keyword">this</span>.get(index - <span class="hljs-number">1</span>);
+        <span class="hljs-keyword">var</span> removed = previousNode.next;
+        previousNode.next = removed.next;
+        <span class="hljs-keyword">this</span>.length--;
+        <span class="hljs-keyword">return</span> removed;
+    }
+
+list.push(<span class="hljs-number">100</span>);
+list.push(<span class="hljs-number">201</span>);
+list.push(<span class="hljs-string">&quot;&#x1F604;&quot;</span>);
+list.push(<span class="hljs-string">&quot;&#x706B;&#x661F;&#x4EBA;&quot;</span>);
+list.push(<span class="hljs-string">&quot;&#x5927;&#x524D;&#x7AEF;&#xFF01;&quot;</span>);
+list.push(<span class="hljs-string">&quot;&#x1F349;&quot;</span>);
+list.push(<span class="hljs-string">&quot;&#x1F4BB;&quot;</span>);
+<span class="hljs-built_in">console</span>.log(list.length);
+<span class="hljs-built_in">console</span>.log(list.remove(<span class="hljs-number">0</span>).val);
+<span class="hljs-built_in">console</span>.log(list.remove(<span class="hljs-number">0</span>).val);
+<span class="hljs-built_in">console</span>.log(list.remove(<span class="hljs-number">0</span>).val);
+<span class="hljs-built_in">console</span>.log(list.remove(<span class="hljs-number">0</span>).val);
+<span class="hljs-built_in">console</span>.log(list.remove(<span class="hljs-number">0</span>).val);
+<span class="hljs-built_in">console</span>.log(list.remove(<span class="hljs-number">0</span>).val);
+<span class="hljs-built_in">console</span>.log(list.remove(<span class="hljs-number">0</span>).val);
+<span class="hljs-built_in">console</span>.log(list.remove(<span class="hljs-number">0</span>)); <span class="hljs-comment">//undefined</span>
+
+
+<span class="hljs-comment">// output:</span>
+<span class="hljs-number">7</span>
+<span class="hljs-number">100</span>
+<span class="hljs-number">201</span>
+&#x1F604;
+&#x706B;&#x661F;&#x4EBA;
+&#x5927;&#x524D;&#x7AEF;&#xFF01;
+&#x1F349;
+&#x1F4BB;
+<span class="hljs-literal">undefined</span>
+</code></pre>
+<hr>
+<h1 id="reverse">Reverse</h1>
+<p><code>Reversing the linked list</code> <strong>in place!</strong></p>
+<p><code>Reverse pseudocode</code></p>
+<ul>
+<li><p>swap the head and tail</p>
+</li>
+<li><p>create a variable called next</p>
+</li>
+<li><p>create a variable called prev</p>
+</li>
+<li><p>create a variable called node and initialize it to the head property</p>
+</li>
+<li><p>Loop through the list</p>
+</li>
+<li><p>set next to be the next property on whatever prev is</p>
+</li>
+<li><p>set prev to be the value of the node variable</p>
+</li>
+<li><p>set the node variable to be the value of the next variable</p>
+</li>
+</ul>
+<p><code>firsly, adding a print method</code></p>
+<pre><code class="lang-js">    print(){
+        <span class="hljs-keyword">var</span> arr = [];
+        <span class="hljs-keyword">var</span> current = <span class="hljs-keyword">this</span>.head;
+        <span class="hljs-keyword">while</span>(current){
+            arr.push(current.val);
+            current = current.next;
+        }
+        <span class="hljs-built_in">console</span>.log(arr);
+    }
+</code></pre>
+<p><code>implementing the reverse function</code></p>
+<pre><code class="lang-js">   reverse(){
+        <span class="hljs-keyword">var</span> node = <span class="hljs-keyword">this</span>.head;
+        <span class="hljs-keyword">this</span>.head = <span class="hljs-keyword">this</span>.tail;
+        <span class="hljs-keyword">this</span>.tail = node;
+
+        <span class="hljs-keyword">var</span> next;
+        <span class="hljs-keyword">var</span> prev= <span class="hljs-literal">null</span>;
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i=<span class="hljs-number">0</span>; i&lt;<span class="hljs-keyword">this</span>.length; i++){
+            next = node.next;
+            node.next = prev;
+            prev = node;
+            node = next;
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+
+list.push(<span class="hljs-number">100</span>);
+list.push(<span class="hljs-number">201</span>);
+list.push(<span class="hljs-string">&quot;&#x1F604;&quot;</span>);
+list.push(<span class="hljs-string">&quot;&#x706B;&#x661F;&#x4EBA;&quot;</span>);
+list.push(<span class="hljs-string">&quot;&#x5927;&#x524D;&#x7AEF;&#xFF01;&quot;</span>);
+list.push(<span class="hljs-string">&quot;&#x1F349;&quot;</span>);
+list.push(<span class="hljs-string">&quot;&#x1F4BB;&quot;</span>);
+list.reverse();
+list.print();
+
+<span class="hljs-comment">// output:</span>
+[
+  <span class="hljs-string">&apos;&#x1F4BB;&apos;</span>,   
+  <span class="hljs-string">&apos;&#x1F349;&apos;</span>,
+  <span class="hljs-string">&apos;&#x5927;&#x524D;&#x7AEF;&#xFF01;&apos;</span>, 
+  <span class="hljs-string">&apos;&#x706B;&#x661F;&#x4EBA;&apos;</span>,
+  <span class="hljs-string">&apos;&#x1F604;&apos;</span>,   
+  <span class="hljs-number">201</span>,
+  <span class="hljs-number">100</span>
+]
+</code></pre>
+<h1 id="big-o">Big O</h1>
+<ul>
+<li><p>Insertion  <strong>O(1)</strong></p>
+</li>
+<li><p>Removal  <strong>It depends...O(1) or O(n)</strong></p>
+</li>
+<li><p>Searching  <strong>O(n)</strong></p>
+</li>
+<li><p>Access  <strong>O(n)</strong></p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="radixSort.html" class="navigation navigation-prev " aria-label="Previous page: 8. Radix Sort">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="doubleList.html" class="navigation navigation-next " aria-label="Next page: 10. Doubly LinkedList">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"9. Singly LinkedList","level":"4.1.9","depth":2,"next":{"title":"10. Doubly LinkedList","level":"4.1.10","depth":2,"path":"algorithm/doubleList.md","ref":"algorithm/doubleList.md","articles":[]},"previous":{"title":"8. Radix Sort","level":"4.1.8","depth":2,"path":"algorithm/radixSort.md","ref":"algorithm/radixSort.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax","expandable-chapters"],"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"algorithm/singleList.md","mtime":"2020-04-05T22:31:21.352Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-17T22:31:12.511Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

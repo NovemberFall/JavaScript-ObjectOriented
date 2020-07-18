@@ -1,0 +1,1592 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2. 异步编程 Asynchronous · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ajax.html" />
+    
+    
+    <link rel="prev" href="Asynchronous.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../ch1/intro.html">
+            
+                <a href="../ch1/intro.html">
+            
+                    
+                    Chapter1：Object
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../ch1/object.html">
+            
+                <a href="../ch1/object.html">
+            
+                    
+                    1. Object Properties
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../ch1/Prototype.html">
+            
+                <a href="../ch1/Prototype.html">
+            
+                    
+                    2. Prototype
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../ch1/nvpo.html">
+            
+                <a href="../ch1/nvpo.html">
+            
+                    
+                    3. Name Value Pairs Object
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../ch1/Closures.html">
+            
+                <a href="../ch1/Closures.html">
+            
+                    
+                    4. Closures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../ch1/EIAO-chain.html">
+            
+                <a href="../ch1/EIAO-chain.html">
+            
+                    
+                    5. Everything is an object
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../ch2/intro.html">
+            
+                <a href="../ch2/intro.html">
+            
+                    
+                    Chapter2：Array
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../ch2/for.html">
+            
+                <a href="../ch2/for.html">
+            
+                    
+                    1. for loop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../ch2/arrayES5.html">
+            
+                <a href="../ch2/arrayES5.html">
+            
+                    
+                    2. Array ES5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../ch2/arrayES6.html">
+            
+                <a href="../ch2/arrayES6.html">
+            
+                    
+                    3. Array ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../ch3/intro.html">
+            
+                <a href="../ch3/intro.html">
+            
+                    
+                    Chapter3：Date Time Library
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../ch3/date.html">
+            
+                <a href="../ch3/date.html">
+            
+                    
+                    1. Date | Time
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../ch4/intro.html">
+            
+                <a href="../ch4/intro.html">
+            
+                    
+                    Chapter4：Class
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../ch4/class.html">
+            
+                <a href="../ch4/class.html">
+            
+                    
+                    1. Class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../ch4/subClass.html">
+            
+                <a href="../ch4/subClass.html">
+            
+                    
+                    2. Sub Class ES5 | ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../ch5/intro.html">
+            
+                <a href="../ch5/intro.html">
+            
+                    
+                    Chapter5：Call back
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../ch5/cb.html">
+            
+                <a href="../ch5/cb.html">
+            
+                    
+                    1. callback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../ch5/ecs.html">
+            
+                <a href="../ch5/ecs.html">
+            
+                    
+                    2. Execution Context Stack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../ch6/intro.html">
+            
+                <a href="../ch6/intro.html">
+            
+                    
+                    Chapter6：call apply bind
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="../ch6/cab.html">
+            
+                <a href="../ch6/cab.html">
+            
+                    
+                    1. call apply bind
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../ch7/intro.html">
+            
+                <a href="../ch7/intro.html">
+            
+                    
+                    Chapter7：Function | IIFE
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.1" data-path="../ch7/fn.html">
+            
+                <a href="../ch7/fn.html">
+            
+                    
+                    1. function es5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.2" data-path="../ch7/fn1.html">
+            
+                <a href="../ch7/fn1.html">
+            
+                    
+                    2. function example
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.3" data-path="../ch7/defaultPara.html">
+            
+                <a href="../ch7/defaultPara.html">
+            
+                    
+                    3. Default Parameters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.4" data-path="../ch7/codeChallenge1.html">
+            
+                <a href="../ch7/codeChallenge1.html">
+            
+                    
+                    4. coding challenging 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.5" data-path="../ch7/codeChallenge.html">
+            
+                <a href="../ch7/codeChallenge.html">
+            
+                    
+                    5. coding challenging 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.6" data-path="../ch7/arrFn.html">
+            
+                <a href="../ch7/arrFn.html">
+            
+                    
+                    6. Arrow function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.7" data-path="../ch7/blockScope.html">
+            
+                <a href="../ch7/blockScope.html">
+            
+                    
+                    7. block scope IIFE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../ch8/intro.html">
+            
+                <a href="../ch8/intro.html">
+            
+                    
+                    Chapter8：Expressions & operators
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.8.1" data-path="../ch8/delete.html">
+            
+                <a href="../ch8/delete.html">
+            
+                    
+                    1. delete operator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../chX/intro.html">
+            
+                <a href="../chX/intro.html">
+            
+                    
+                    ChapterX：中文教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.9.1" data-path="../chX/fn.html">
+            
+                <a href="../chX/fn.html">
+            
+                    
+                    1. function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.2" data-path="../chX/scope.html">
+            
+                <a href="../chX/scope.html">
+            
+                    
+                    2. scope | destructuring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.3" data-path="../chX/method.html">
+            
+                <a href="../chX/method.html">
+            
+                    
+                    3. method 方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.4" data-path="../chX/highOrder.html">
+            
+                <a href="../chX/highOrder.html">
+            
+                    
+                    4. High-Order Function
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.9.4.1" data-path="../chX/mapReduce.html">
+            
+                <a href="../chX/mapReduce.html">
+            
+                    
+                    1. map | reduce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.4.2" data-path="../chX/filter.html">
+            
+                <a href="../chX/filter.html">
+            
+                    
+                    2. filter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.4.3" data-path="../chX/sort.html">
+            
+                <a href="../chX/sort.html">
+            
+                    
+                    3. sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.4.4" data-path="../chX/arr.html">
+            
+                <a href="../chX/arr.html">
+            
+                    
+                    4. Array
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    JavaScript ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../ch8/intro.html">
+            
+                <a href="../ch8/intro.html">
+            
+                    
+                    Chapter8：Template String
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../ch8/temString.html">
+            
+                <a href="../ch8/temString.html">
+            
+                    
+                    1. Template String
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="intro.html">
+            
+                <a href="intro.html">
+            
+                    
+                    Chapter9：异步编程 Asynchronous
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="Asynchronous.html">
+            
+                <a href="Asynchronous.html">
+            
+                    
+                    1. Asynchronous
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.3.2" data-path="Asynchronous1.html">
+            
+                <a href="Asynchronous1.html">
+            
+                    
+                    2. 异步编程 Asynchronous
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="ajax.html">
+            
+                <a href="ajax.html">
+            
+                    
+                    3. AJAX
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../ch10/intro.html">
+            
+                <a href="../ch10/intro.html">
+            
+                    
+                    Chapter10：let const
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="../ch10/let.html">
+            
+                <a href="../ch10/let.html">
+            
+                    
+                    1. let const
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.2" data-path="../ch10/localStorage.html">
+            
+                <a href="../ch10/localStorage.html">
+            
+                    
+                    2. local storage
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../ch11/intro.html">
+            
+                <a href="../ch11/intro.html">
+            
+                    
+                    Chapter11：Map
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="../ch11/maps.html">
+            
+                <a href="../ch11/maps.html">
+            
+                    
+                    1. maps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" data-path="../ch11/Destructuring.html">
+            
+                <a href="../ch11/Destructuring.html">
+            
+                    
+                    2. Destructuring 解构赋值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.3" data-path="../ch11/rest.html">
+            
+                <a href="../ch11/rest.html">
+            
+                    
+                    3. Rest parameters
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Data Structure Algorithm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../algorithm/recursion.html">
+            
+                <a href="../algorithm/recursion.html">
+            
+                    
+                    1. Recursion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../algorithm/search.html">
+            
+                <a href="../algorithm/search.html">
+            
+                    
+                    2. Search Algorithm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../algorithm/bubSort.html">
+            
+                <a href="../algorithm/bubSort.html">
+            
+                    
+                    3. Bubble Sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../algorithm/slSort.html">
+            
+                <a href="../algorithm/slSort.html">
+            
+                    
+                    4. Selection Sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../algorithm/insertSort.html">
+            
+                <a href="../algorithm/insertSort.html">
+            
+                    
+                    5. Insertion Sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../algorithm/mergeSort.html">
+            
+                <a href="../algorithm/mergeSort.html">
+            
+                    
+                    6. Merge Sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../algorithm/quickSort.html">
+            
+                <a href="../algorithm/quickSort.html">
+            
+                    
+                    7. quick Sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../algorithm/radixSort.html">
+            
+                <a href="../algorithm/radixSort.html">
+            
+                    
+                    8. Radix Sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="../algorithm/singleList.html">
+            
+                <a href="../algorithm/singleList.html">
+            
+                    
+                    9. Singly LinkedList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.10" data-path="../algorithm/doubleList.html">
+            
+                <a href="../algorithm/doubleList.html">
+            
+                    
+                    10. Doubly LinkedList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.11" data-path="../algorithm/stackQueue.html">
+            
+                <a href="../algorithm/stackQueue.html">
+            
+                    
+                    11. Stack && Queue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.12" data-path="../algorithm/BST.html">
+            
+                <a href="../algorithm/BST.html">
+            
+                    
+                    12. Binary Search Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Application Firebase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../A1/intro.html">
+            
+                <a href="../A1/intro.html">
+            
+                    
+                    Ch 1：firbase
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../A1/ta.html">
+            
+                <a href="../A1/ta.html">
+            
+                    
+                    1. firebase-ta
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../A1/db.html">
+            
+                <a href="../A1/db.html">
+            
+                    
+                    2. Database Firebase
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../A2/intro.html">
+            
+                <a href="../A2/intro.html">
+            
+                    
+                    Ch 2：Babel Webpack
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="../A2/bw.html">
+            
+                <a href="../A2/bw.html">
+            
+                    
+                    1. babel webpack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../end/SUMMARY.html">
+            
+                <a href="../end/SUMMARY.html">
+            
+                    
+                    End
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2. 异步编程 Asynchronous</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="2-&#x5F02;&#x6B65;&#x7F16;&#x7A0B;-asynchronous">2. &#x5F02;&#x6B65;&#x7F16;&#x7A0B; Asynchronous</h1>
+<pre><code>1. call back
+
+2. generator
+
+3. promise
+
+4. async + await
+</code></pre><h3 id="promise"><code>Promise</code></h3>
+<ul>
+<li><p>&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x5F02;&#x6B65;&#x8BA1;&#x7B97;</p>
+</li>
+<li><p>&#x53EF;&#x4EE5;&#x5C06;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x961F;&#x5217;&#x5316;&#xFF0C;&#x6309;&#x7167;&#x671F;&#x671B;&#x7684;&#x987A;&#x5E8F;&#x6267;&#x884C;&#xFF0C;&#x8FD4;&#x56DE;&#x7B26;&#x5408;&#x9884;&#x671F;&#x7684;&#x7ED3;&#x679C;</p>
+</li>
+<li><p>&#x53EF;&#x4EE5;&#x5728;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x4F20;&#x9012;&#x548C;&#x64CD;&#x4F5C;promise&#xFF0C; &#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x5904;&#x7406;&#x961F;&#x5217;</p>
+</li>
+</ul>
+<h4 id="javascript-&#x5305;&#x542B;&#x5927;&#x91CF;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;">javascript &#x5305;&#x542B;&#x5927;&#x91CF;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;</h4>
+<ul>
+<li><p>javascript &#x4E3A;&#x68C0;&#x67E5;&#x8868;&#x5355;&#x800C;&#x751F;</p>
+</li>
+<li><p>&#x521B;&#x9020;&#x5B83;&#x7684;&#x9996;&#x8981;&#x76EE;&#x6807;&#x662F;&#x64CD;&#x4F5C;dom</p>
+</li>
+<li><p>&#x6240;&#x4EE5;&#xFF0C;javascript &#x7684;&#x64CD;&#x4F5C;&#x5927;&#x591A;&#x90FD;&#x662F;&#x5F02;&#x6B65;&#x7684;</p>
+</li>
+</ul>
+<h4 id="&#x4E3A;&#x4EC0;&#x4E48;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x754C;&#x9762;&#x51BB;&#x7ED3;&#xFF1F;">&#x4E3A;&#x4EC0;&#x4E48;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x754C;&#x9762;&#x51BB;&#x7ED3;&#xFF1F;</h4>
+<ul>
+<li><p>&#x5047;&#x8BBE;&#x4F60;&#x53BB;&#x4E00;&#x5BB6;&#x996D;&#x5E97;&#xFF0C;&#x81EA;&#x5DF1;&#x627E;&#x5EA7;&#x4F4D;&#x5750;&#x4E0B;&#x4E86;&#xFF0C;&#x7136;&#x540E;&#x62DB;&#x547C;&#x670D;&#x52A1;&#x5458;&#x62FF;&#x83DC;&#x5355;</p>
+</li>
+<li><p>&#x670D;&#x52A1;&#x5458;&#x8BF4;&#xFF1A;&#x201C;&#x5BF9;&#x4E0D;&#x8D77;&#xFF0C;&#x6211;&#x662F;<code>&#x540C;&#x6B65;</code>&#x670D;&#x52A1;&#x5458;&#xFF0C;&#x6211;&#x8981;&#x670D;&#x52A1;&#x5B8C;&#x8FD9;&#x5F20;&#x684C;&#x5B50;&#x624D;&#x80FD;&#x62DB;&#x547C;&#x4F60;&#x3002;&#x201D;</p>
+</li>
+<li><p>&#x4F60;&#x662F;&#x4E0D;&#x662F;&#x5F88;&#x751F;&#x6C14;&#x5F88;&#x60F3;&#x62BD;ta&#xFF1F;</p>
+</li>
+<li><p>&#x90A3;&#x4E00;&#x684C;&#x4EBA;&#x660E;&#x660E;&#x5DF2;&#x7ECF;&#x5403;&#x4E0A;&#x4E86;&#xFF0C;&#x4F60;&#x53EA;&#x662F;&#x60F3;&#x8981;&#x83DC;&#x5355;&#xFF0C;&#x8FD9;&#x4E48;&#x5C0F;&#x7684;&#x4E00;&#x4E2A;&#x52A8;&#x4F5C;&#xFF0C;&#x670D;&#x52A1;&#x5458;&#x5374;&#x8981;&#x4F60;&#x7B49;&#x5230;&#x522B;&#x4EBA;&#x7684;&#x4E00;&#x4E2A;&#x5927;&#x52A8;&#x4F5C;&#x5B8C;&#x6210;&#x3002;</p>
+</li>
+<li><p>&#x8FD9;&#x5C31;&#x662F;<code>&#x540C;&#x6B65;</code>&#x7684;&#x95EE;&#x9898;&#xFF1A;</p>
+</li>
+<li><p><code>&#x987A;&#x5E8F;&#x4EA4;&#x4ED8;&#x7684;&#x5DE5;&#x4F5C;1234&#xFF0C; &#x5FC5;&#x987B;&#x6309;&#x7167;1234&#x7684;&#x987A;&#x5E8F;&#x5B8C;&#x6210;&#x3002;</code></p>
+</li>
+</ul>
+<h4 id="&#x5F02;&#x6B65;">&#x5F02;&#x6B65;</h4>
+<ul>
+<li><p>&#x5F02;&#x6B65;&#xFF0C;&#x5219;&#x662F;&#x5C06;&#x8017;&#x65F6;&#x5F88;&#x957F;&#x7684; a &#x4EA4;&#x4ED8;&#x7684;&#x5DE5;&#x4F5C;&#x4EA4;&#x7ED9;&#x7CFB;&#x7EDF;&#x4E4B;&#x540E;&#xFF0C; &#x5C31;&#x53BB;&#x7EE7;&#x7EED;&#x505A; b &#x4EA4;&#x4ED8;&#x7684;&#x5DE5;&#x4F5C;&#x3002; &#x7B49;&#x5230;&#x7CFB;&#x7EDF;&#x5B8C;&#x6210;&#x524D;&#x9762;&#x7684;&#x5DE5;&#x4F5C;&#x4E4B;&#x540E;&#xFF0C;
+&#x518D;&#x901A;&#x8FC7;&#x56DE;&#x8C03;&#x6216;&#x8005;&#x4E8B;&#x4EF6;&#xFF0C;&#x7EE7;&#x7EED;&#x505A; a &#x5269;&#x4E0B;&#x7684;&#x5DE5;&#x4F5C;&#x3002;</p>
+</li>
+<li><p>&#x4ECE;&#x89C2;&#x5BDF;&#x8005;&#x7684;&#x89D2;&#x5EA6;&#x6765;&#x770B;&#x8D77;&#x6765;&#xFF0C;a b &#x5DE5;&#x4F5C;&#x7684;&#x5B8C;&#x6210;&#x987A;&#x5E8F;&#xFF0C;&#x548C;&#x4EA4;&#x4ED8;&#x4ED6;&#x4EEC;&#x7684;&#x4E8B;&#x4EF6;&#x987A;&#x5E8F;&#x65E0;&#x5173;&#xFF0C;&#x6240;&#x4EE5;&#x53EB;<code>&#x5F02;&#x6B65;</code>&#x3002;</p>
+</li>
+</ul>
+<h4 id="&#x7A0D;&#x6709;&#x4E0D;&#x614E;&#xFF0C;&#x5C31;&#x4F1A;&#x8E0F;&#x5165;callback-hell">&#x7A0D;&#x6709;&#x4E0D;&#x614E;&#xFF0C;&#x5C31;&#x4F1A;&#x8E0F;&#x5165;<code>callback hell</code></h4>
+<p><code>&#x9664;&#x6B64;&#x4E4B;&#x5916;&#xFF0C;&#x8FD8;&#x6709;&#x66F4;&#x6DF1;&#x5C42;&#x6B21;&#x7684;&#x95EE;&#x9898;</code></p>
+<ul>
+<li><p>&#x5047;&#x8BBE;&#x9700;&#x6C42;&#xFF1A;</p>
+</li>
+<li><p>&#x904D;&#x5386;&#x76EE;&#x5F55;&#xFF0C;&#x627E;&#x51FA;&#x6700;&#x5927;&#x7684;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;</p>
+</li>
+</ul>
+<h3 id="&#x4EE5;&#x4E0B;&#x624D;&#x662F;promise&#x8BDE;&#x751F;&#x7684;&#x539F;&#x56E0;&#xFF1A;">&#x4EE5;&#x4E0B;&#x624D;&#x662F;Promise&#x8BDE;&#x751F;&#x7684;&#x539F;&#x56E0;&#xFF1A;</h3>
+<pre><code class="lang-js">a(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">resultsFromA</span>) </span>{
+  b(resultsFromA, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">resultsFromB</span>) </span>{
+    c(resultsFromB, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">resultsFromC</span>) </span>{
+      d(resultsFromC, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">resultsFromD</span>) </span>{
+        e(resultsFromD, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">resultsFromE</span>) </span>{
+          f(resultsFromE, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">resultsFromF</span>) </span>{
+            <span class="hljs-built_in">console</span>.log(resultsFromF);
+          })
+        })
+      })
+    })
+  })
+});
+</code></pre>
+<h4 id="&#x56DE;&#x8C03;&#x6709;&#x56DB;&#x4E2A;&#x95EE;&#x9898;">&#x56DE;&#x8C03;&#x6709;&#x56DB;&#x4E2A;&#x95EE;&#x9898;</h4>
+<ol>
+<li><p>&#x5D4C;&#x5957;&#x5C42;&#x6B21;&#x5F88;&#x6DF1;&#xFF0C;&#x96BE;&#x4EE5;&#x7EF4;&#x62A4;</p>
+</li>
+<li><p>&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x4F7F;&#x7528;return &#x548C; throw</p>
+</li>
+<li><p>&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x68C0;&#x7D22;&#x5806;&#x6808;&#x4FE1;&#x606F;</p>
+</li>
+<li><p>&#x591A;&#x4E2A;&#x56DE;&#x8C03;&#x4E4B;&#x95F4;&#x96BE;&#x4EE5;&#x5EFA;&#x7ACB;&#x8054;&#x7CFB;</p>
+</li>
+</ol>
+<h4 id="&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x7684;javascript">&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x7684;javascript</h4>
+<ul>
+<li><p>&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x4EE5;&#x4E8B;&#x4EF6;&#x4E3A;&#x4E3B;</p>
+</li>
+<li><p>callback&#x4E3B;&#x8981;&#x51FA;&#x73B0;&#x5728; ajax &#x548C; file api</p>
+</li>
+<li><p>&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x95EE;&#x9898;&#x5C1A;&#x4E0D;&#x4E25;&#x91CD;</p>
+</li>
+</ul>
+<h4 id="&#x6709;&#x4E86;nodejs&#x4E4B;&#x540E;">&#x6709;&#x4E86;node.js&#x4E4B;&#x540E;</h4>
+<p><code>&#x5BF9;&#x5F02;&#x6B65;&#x7684;&#x4F9D;&#x8D56;&#x8FDB;&#x4E00;&#x6B65;&#x52A0;&#x5267;&#x4E86;&#x3002;&#x3002;&#x3002;</code></p>
+<ul>
+<li><p>&#x65E0;&#x963B;&#x585E;&#x9AD8;&#x5E76;&#x53D1;&#xFF0C;&#x662F;node.js&#x7684;&#x62DB;&#x724C;</p>
+</li>
+<li><p>&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x662F;&#x5176;&#x4FDD;&#x969C;</p>
+</li>
+<li><p>&#x5927;&#x91CF;&#x64CD;&#x4F5C;&#x4F9D;&#x8D56;callback function</p>
+</li>
+</ul>
+<h3 id="promise&#x7684;&#x6982;&#x5FF5;&#x548C;&#x4F18;&#x70B9;"><code>Promise&#x7684;&#x6982;&#x5FF5;&#x548C;&#x4F18;&#x70B9;</code></h3>
+<p>&#x3010;&#x4F18;&#x70B9;&#x3011;</p>
+<ul>
+<li><p>Promise&#x662F;&#x4E00;&#x4E2A;&#x4EE3;&#x7406;&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x548C;&#x539F;&#x5148;&#x8981;&#x8FDB;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#x5E76;&#x65E0;&#x5173;&#x7CFB;</p>
+</li>
+<li><p>Promise&#x901A;&#x8FC7;&#x5F15;&#x5165;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#xFF0C;&#x907F;&#x514D;&#x4E86;&#x66F4;&#x591A;&#x7684;&#x56DE;&#x8C03;</p>
+</li>
+</ul>
+<p>&#x3010;&#x72B6;&#x6001;&#x3011;</p>
+<ul>
+<li><p><code>pending</code>&#xFF1A;&#x5F85;&#x5B9A;&#xFF0C;&#x79F0;&#x4E3A;&#x521D;&#x59CB;&#x72B6;&#x6001;</p>
+</li>
+<li><p><code>fulfilled</code>&#xFF1A;&#x5B9E;&#x73B0;&#xFF0C;&#x79F0;&#x4E3A;&#x64CD;&#x4F5C;&#x6210;&#x529F;&#x72B6;&#x6001;</p>
+</li>
+<li><p><code>rejected</code>&#xFF1A;&#x88AB;&#x5426;&#x51B3;&#xFF0C;&#x79F0;&#x4E3A;&#x64CD;&#x4F5C;&#x5931;&#x8D25;&#x72B6;&#x6001;</p>
+</li>
+<li><p>&#x5F53;Promise&#x72B6;&#x6001;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x4F1A;&#x89E6;&#x53D1;.then()&#x91CC;&#x7684;&#x54CD;&#x5E94;&#x51FD;&#x6570;&#x6765;&#x5904;&#x7406;&#x540E;&#x7EED;&#x6B65;&#x9AA4;</p>
+</li>
+<li><p>Promise&#x72B6;&#x6001;&#x5DF2;&#x7ECF;&#x6539;&#x53D8;&#xFF0C;&#x5C31;&#x4E0D;&#x4F1A;&#x518D;&#x53D8;</p>
+</li>
+</ul>
+<h3 id="promise&#x7684;&#x57FA;&#x672C;&#x8BED;&#x6CD5;"><code>Promise&#x7684;&#x57FA;&#x672C;&#x8BED;&#x6CD5;</code></h3>
+<pre><code class="lang-js"><span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(
+    <span class="hljs-comment">/* &#x6267;&#x884C;&#x5668; executor */</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">resolve, reject</span>) </span>{
+      <span class="hljs-comment">// &#x4E00;&#x6BB5;&#x8017;&#x65F6;&#x5F88;&#x957F;&#x7684;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;</span>
+      resolve(); <span class="hljs-comment">// &#x6570;&#x636E;&#x5904;&#x7406;&#x5B8C;&#x6210;</span>
+      reject(); <span class="hljs-comment">// &#x6570;&#x636E;&#x5904;&#x7406;&#x51FA;&#x9519;</span>
+    }
+ ).then(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">A</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// &#x6210;&#x529F;&#xFF0C;&#x4E0B;&#x4E00;&#x6B65;</span>
+  }, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">B</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// &#x5931;&#x8D25;&#xFF0C;&#x505A;&#x76F8;&#x5E94;&#x5904;&#x7406;</span>
+  });
+</code></pre>
+<h3 id="promise&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;"><code>Promise&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;</code></h3>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;here we go&apos;</span>);
+<span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(resolve =&gt; {
+    setTimeout(() =&gt; {
+      resolve(<span class="hljs-string">&apos;hello&apos;</span>);
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-number">123</span>);
+    }, <span class="hljs-number">2000</span>);
+  })
+  .then(name =&gt; {
+    <span class="hljs-built_in">console</span>.log(name + <span class="hljs-string">&apos; world&apos;</span>);
+  });
+
+<span class="hljs-comment">/* 
+here we go
+123
+hello world
+*/</span>
+</code></pre>
+<ul>
+<li>&#x4EE5;&#x4E0A;&#x4EE3;&#x7801;&#x548C;&#x8BFE;&#x7A0B;&#x7A0D;&#x5FAE;&#x6709;&#x4E9B;&#x4E0D;&#x540C;&#xFF0C;&#x76EE;&#x7684;&#x662F;&#x548C;&#x5B9A;&#x65F6;&#x5668;&#x505A;&#x4E00;&#x4E9B;&#x5BF9;&#x6BD4;&#xFF0C;&#x4EE5;&#x6B64;&#x53D1;&#x73B0;&#x4E00;&#x70B9;&#x4EC0;&#x4E48;&#x3002;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;here we go&apos;</span>);
+setTimeout(() =&gt; {
+  greeting(<span class="hljs-string">&quot;hello&quot;</span>);
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-number">123</span>);
+}, <span class="hljs-number">2000</span>)
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">greeting</span>(<span class="hljs-params">name</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(name + <span class="hljs-string">&apos; world&apos;</span>);
+}
+
+<span class="hljs-comment">/* 
+here we go
+hello world
+123
+*/</span>
+</code></pre>
+<ul>
+<li>&#x901A;&#x8FC7;&#x4EE5;&#x4E0A;&#x4E24;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x6BD4;&#x8F83;&#xFF0C;&#x53EF;&#x4EE5;&#x6D45;&#x663E;&#x7684;&#x5F97;&#x51FA;&#xFF1A;<strong>resolve()&#x72B6;&#x6001;&#x5F15;&#x53D1;&#x7684;then()&#x662F;&#x5F02;&#x6B65;&#x7684;</strong></li>
+</ul>
+<h3 id="promise&#x4E24;&#x6B65;&#x6267;&#x884C;&#x7684;&#x8303;&#x4F8B;"><code>Promise&#x4E24;&#x6B65;&#x6267;&#x884C;&#x7684;&#x8303;&#x4F8B;</code></h3>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;here we go&apos;</span>);
+<span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(resolve =&gt; {
+    setTimeout(() =&gt; {
+      resolve(<span class="hljs-string">&apos;hello&apos;</span>);
+    }, <span class="hljs-number">2000</span>);
+  })
+  .then(value =&gt; {
+    <span class="hljs-built_in">console</span>.log(value);
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(resolve =&gt; {
+      setTimeout(() =&gt; {
+        resolve(<span class="hljs-string">&apos;world&apos;</span>);
+      }, <span class="hljs-number">2000</span>);
+    });
+  })
+  .then(value =&gt; {
+    <span class="hljs-built_in">console</span>.log(value + <span class="hljs-string">&apos; world&apos;</span>);
+  });
+</code></pre>
+<ul>
+<li>&#x8FD9;&#x4E2A;&#x8303;&#x4F8B;&#x4E3B;&#x8981;&#x662F;&#x7B80;&#x5355;&#x7684;&#x6F14;&#x793A;&#x4E86;Promise&#x5982;&#x4F55;&#x89E3;&#x51B3;&#x56DE;&#x8C03;&#x5730;&#x72F1;&#x8FD9;&#x4E2A;&#x8BA9;&#x4EBA;&#x5934;&#x5927;&#x7684;&#x95EE;&#x9898;&#x3002;</li>
+</ul>
+<h3 id="&#x5BF9;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#x7684;promise&#x6267;&#x884C;then">&#x5BF9;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#x7684;Promise&#x6267;&#x884C;then()</h3>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;start&apos;</span>);
+<span class="hljs-keyword">let</span> promise = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(resolve =&gt; {
+  setTimeout(() =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;the promise fulfilled&apos;</span>);
+    resolve(<span class="hljs-string">&apos;hello, world&apos;</span>);
+  }, <span class="hljs-number">1000</span>);
+});
+
+setTimeout(() =&gt; {
+  promise.then(value =&gt; {
+    <span class="hljs-built_in">console</span>.log(value);
+  });
+}, <span class="hljs-number">3000</span>);
+
+<span class="hljs-comment">/* 
+start
+the promise fulfilled
+hello, world
+
+*/</span>
+</code></pre>
+<ul>
+<li>&#x8BB2;&#x5E08;&#x7684;&#x539F;&#x8BDD;&#xFF1A;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x5C55;&#x793A;&#x4E86;Promise&#x4F5C;&#x4E3A;&#x961F;&#x5217;&#x8FD9;&#x4E2A;&#x91CD;&#x8981;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x5C31;&#x662F;&#x8BF4;&#x6211;&#x4EEC;&#x5728;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x5730;&#x65B9;&#x751F;&#x6210;&#x4E86;&#x4E00;&#x4E2A;Promise&#x5BF9;&#x8C61;&#xFF0C;
+&#x90FD;&#x53EF;&#x4EE5;&#x628A;&#x5B83;&#x5F53;&#x505A;&#x6210;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x4F20;&#x9012;&#x5230;&#x5176;&#x4ED6;&#x5730;&#x65B9;&#x6267;&#x884C;&#x3002;&#x4E0D;&#x7BA1;Promise&#x524D;&#x9762;&#x7684;&#x72B6;&#x6001;&#x5230;&#x5E95;&#x6709;&#x6CA1;&#x6709;&#x5B8C;&#x6210;&#xFF0C;&#x961F;&#x5217;&#x90FD;&#x4F1A;&#x6309;&#x7167;&#x56FA;&#x5B9A;&#x7684;&#x987A;&#x5E8F;&#x53BB;&#x6267;&#x884C;&#x3002;</li>
+</ul>
+<h3 id="then&#x4E0D;&#x8FD4;&#x56DE;promise"><code>then()&#x4E0D;&#x8FD4;&#x56DE;Promise</code></h3>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;here we go&apos;</span>);
+<span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(resolve =&gt; {
+    setTimeout(() =&gt; {
+      resolve(<span class="hljs-string">&apos;hello&apos;</span>);
+    }, <span class="hljs-number">2000</span>);
+  })
+  .then(value =&gt; {
+    <span class="hljs-built_in">console</span>.log(value);
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;everyone&apos;</span>);
+    (<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(resolve =&gt; {
+        setTimeout(() =&gt; {
+          <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Mr.Laurence&apos;</span>);
+          resolve(<span class="hljs-string">&apos;Merry Xmas&apos;</span>);
+        }, <span class="hljs-number">2000</span>);
+      });
+    }());
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+  })
+  .then(value =&gt; {
+    <span class="hljs-built_in">console</span>.log(value + <span class="hljs-string">&apos; world&apos;</span>);
+  });
+
+<span class="hljs-comment">/* 
+here we go
+hello
+everyone
+false world
+Mr.Laurence
+*/</span>
+</code></pre>
+<ul>
+<li>&#x6211;&#x5BF9;&#x4EE5;&#x4E0A;&#x4EE3;&#x7801;&#x7684;&#x7406;&#x89E3;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF1A;&#x6700;&#x540E;&#x4E00;&#x4E2A;then()&#x65B9;&#x6CD5;&#x91CC;&#x7684;value&#x503C;&#x4EE3;&#x8868;&#x7684;&#x662F;&#x4E0A;&#x4E00;&#x4E2A;then()&#x91CC;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;
+&#x5F53;&#x6CA1;&#x6709;return&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x9ED8;&#x8BA4;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;undefined&#x3002;&#x800C;resolve()&#x91CC;&#x7684;&#x6570;&#x636E;&#x4E3A;&#x4EC0;&#x4E48;&#x6CA1;&#x88AB;&#x8C03;&#x7528;&#x5462;&#xFF1F;&#x56E0;&#x4E3A;&#x4E0A;&#x4E00;&#x4E2A;then()&#x65B9;&#x6CD5;&#x91CC;return&#x7684;&#x662F;false&#x800C;&#x4E0D;&#x662F;Promise&#x5B9E;&#x4F8B;&#x3002;</li>
+</ul>
+<h3 id="then&#x89E3;&#x6790;"><code>then()&#x89E3;&#x6790;</code></h3>
+<ul>
+<li><p>then()&#x63A5;&#x53D7;&#x4E24;&#x4E2A;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x5206;&#x522B;&#x4EE3;&#x8868;fulfilled&#x548C;rejected</p>
+</li>
+<li><p>then()&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;Promise&#x5B9E;&#x4F8B;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x53EF;&#x4EE5;&#x94FE;&#x5F0F;&#x8C03;&#x7528;</p>
+</li>
+<li><p>&#x5F53;&#x524D;&#x9762;&#x7684;Promise&#x72B6;&#x6001;&#x6539;&#x53D8;&#x65F6;&#xFF0C;then()&#x6839;&#x636E;&#x5176;&#x6700;&#x7EC8;&#x72B6;&#x6001;&#xFF0C;&#x9009;&#x62E9;&#x7279;&#x5B9A;&#x7684;&#x72B6;&#x6001;&#x54CD;&#x5E94;&#x51FD;&#x6570;&#x6267;&#x884C;</p>
+</li>
+<li><p>&#x72B6;&#x6001;&#x54CD;&#x5E94;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x65B0;&#x7684;Promise&#x6216;&#x5176;&#x4ED6;&#x503C;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x8FD4;&#x56DE;&#x65B0;&#x7684;Promise&#xFF0C;&#x90A3;&#x4E48;&#x4E0B;&#x4E00;&#x7EA7;then()&#x4F1A;&#x5728;&#x65B0;&#x7684;Promise&#x72B6;&#x6001;&#x6539;&#x53D8;&#x4E4B;&#x540E;&#x6267;&#x884C;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x8FD4;&#x56DE;&#x5176;&#x4ED6;&#x4EFB;&#x4F55;&#x503C;&#xFF0C;&#x5219;&#x4F1A;&#x7ACB;&#x523B;&#x6267;&#x884C;&#x4E0B;&#x4E00;&#x7EA7;then()</p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Asynchronous.html" class="navigation navigation-prev " aria-label="Previous page: 1. Asynchronous">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ajax.html" class="navigation navigation-next " aria-label="Next page: 3. AJAX">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2. 异步编程 Asynchronous","level":"3.3.2","depth":2,"next":{"title":"3. AJAX","level":"3.3.3","depth":2,"path":"ch9/ajax.md","ref":"ch9/ajax.md","articles":[]},"previous":{"title":"1. Asynchronous","level":"3.3.1","depth":2,"path":"ch9/Asynchronous.md","ref":"ch9/Asynchronous.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax","expandable-chapters"],"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"ch9/Asynchronous1.md","mtime":"2020-03-26T22:18:54.371Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-17T22:31:12.511Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
