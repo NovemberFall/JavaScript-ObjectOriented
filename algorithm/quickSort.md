@@ -1,2 +1,0 @@
-# 7. quick Sort
-

@@ -1,6 +1,0 @@
-{
-    "plugins": ["mathjax","expandable-chapters"],
-    "styles": {
-        "website": "styles/website.css"
-    }
-}
