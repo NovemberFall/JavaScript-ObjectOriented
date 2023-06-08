@@ -1,4 +1,4 @@
-# 1. Template String
+## 1. Template String
 
 - ES5
   
@@ -24,8 +24,7 @@ yearOfBirth + '. Today, he is '+calcAge(yearOfBirth)+' years old.');
 /* This is John Smith . He was born in1990. Today, he is 26 years old. */
 
 //ES6
-console.log(`This is ${firstName} ${lastName}. He was born in ${yearOfBirth}. 
-Today, he is ${calcAge(yearOfBirth)} years old.`);
+console.log(`This is ${firstName} ${lastName}. He was born in ${yearOfBirth}. Today, he is ${calcAge(yearOfBirth)} years old.`);
 /* This is John Smith. He was born in 1990. 
 Today, he is 26 years old. */
 
