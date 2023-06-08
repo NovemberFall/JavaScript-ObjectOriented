@@ -45,9 +45,8 @@
 
 -----
 * [JavaScript ES6](README.md)
-* [Chapter8：Template String](ch8/intro.md)
-    * [1. Template String](ch8/temString.md)
-* [Chapter9：异步编程 Asynchronous](ch9/intro.md)
+* [Template String](ch8/temString.md)
+* [Chapter9：Asynchronous](ch9/intro.md)
     * [1. Asynchronous](ch9/Asynchronous.md)
     * [2. 异步编程 Asynchronous](ch9/Asynchronous1.md)
     * [3. AJAX](ch9/ajax.md)
@@ -60,25 +59,4 @@
     * [3. Rest parameters](ch11/rest.md)
 
 -----
-* [Data Structure Algorithm](README.md)
-    * [1. Recursion](algorithm/recursion.md)
-    * [2. Search Algorithm](algorithm/search.md)
-    * [3. Bubble Sort](algorithm/bubSort.md)
-    * [4. Selection Sort](algorithm/slSort.md)
-    * [5. Insertion Sort](algorithm/insertSort.md)
-    * [6. Merge Sort](algorithm/mergeSort.md)
-    * [7. quick Sort](algorithm/quickSort.md)
-    * [8. Radix Sort](algorithm/radixSort.md)
-    * [9. Singly LinkedList](algorithm/singleList.md)
-    * [10. Doubly LinkedList](algorithm/doubleList.md)
-    * [11. Stack && Queue](algorithm/stackQueue.md)
-    * [12. Binary Search Tree](algorithm/BST.md)
-
------
-* [Application Firebase](README.md)
-* [Ch 1：firbase](A1/intro.md)
-    * [1. firebase-ta](A1/ta.md)
-    * [2. Database Firebase](A1/db.md)
-* [Ch 2：Babel Webpack](A2/intro.md)
-    * [1. babel webpack](A2/bw.md)
 * [End](end/SUMMARY.md)
