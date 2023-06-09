@@ -2,7 +2,7 @@
 
 - ES5
   
-```js
+```java
 let firstName = 'John';
 let lastName = 'Smith';
 const yearOfBirth = 1990;
@@ -35,4 +35,5 @@ console.log(n.endsWith('th'));  //true
 console.log(n.includes(' '));  //true
 console.log(firstName.repeat(5)); //JohnJohnJohnJohnJohn
 console.log(`${firstName} `.repeat(5)); //John John John John John
+
 ```
